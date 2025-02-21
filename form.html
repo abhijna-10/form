@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 70px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 10px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Feedback Form</h2>
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name"  />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email"  />
+      <label for="Phone">Phone</label>
+      <input type="text" id="Phone" name="Phone" placeholder="Enter phone number"/>
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating" >
+        <option value="" disabled selected>Select your rating</option>
+        <option value="5">Excellent</option>
+        <option value="4">Very Good</option>
+        <option value="3">Good</option>
+        <option value="2">Average</option>
+        <option value="1">Poor </option>
+      </select>
+
+      <label for="comments">Any Questions regarding product or service.</label>
+      <textarea id="comments" name="comments" placeholder="any questions..." ></textarea>
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments" name="comments" placeholder="Write your additonal comments here..." ></textarea>
+
+      <button type="submit" >Submit </button>
+
+      
+    </form>
+  </div>
+</body>
+</html>
